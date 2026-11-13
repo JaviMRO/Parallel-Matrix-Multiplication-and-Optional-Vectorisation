@@ -1,0 +1,143 @@
+{
+  "tag": "unpinned",
+  "start_local": "2026-11-13T15:34:56",
+  "git_revision": "5305649",
+  "args": {
+    "quick": false,
+    "sizes": [
+      1024,
+      2048
+    ],
+    "threads": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "methods": [
+      "omp"
+    ],
+    "naive_max_n": 1024,
+    "reps": 10,
+    "warmup": 2,
+    "time_budget": 300.0,
+    "mem_budget": 2147483648,
+    "pin": "none",
+    "proc_bind": "close",
+    "places": "cores",
+    "order_seed": 20251113,
+    "seed": 20250301,
+    "input_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\data",
+    "tag": "unpinned",
+    "raw_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\results\\raw",
+    "dry_run": false,
+    "estimate_from": null
+  },
+  "environment": {
+    "OMP_DYNAMIC": "false",
+    "OMP_PROC_BIND": "close",
+    "OMP_PLACES": "cores",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "notes": [
+    "OMP_NUM_THREADS is set to p for every process.",
+    "libgomp (MinGW-w64) ignores OMP_PROC_BIND/OMP_PLACES on Windows; the proc_bind/places CSV columns are the requested values only. The affinity actually applied is given by the pin_mode and pinned_lps columns (bench.exe --pin, SetThreadAffinityMask).",
+    "Order: ascending n; (method, p) shuffled within each n with order_seed."
+  ],
+  "plan": [
+    {
+      "index": 0,
+      "n": 1024,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 1,
+      "n": 1024,
+      "method": "omp",
+      "p": 32
+    },
+    {
+      "index": 2,
+      "n": 1024,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 3,
+      "n": 1024,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 4,
+      "n": 2048,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 5,
+      "n": 2048,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 6,
+      "n": 2048,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 7,
+      "n": 2048,
+      "method": "omp",
+      "p": 32
+    }
+  ],
+  "events": [
+    {
+      "index": 0,
+      "returncode": 0,
+      "wall_s": 0.703
+    },
+    {
+      "index": 1,
+      "returncode": 0,
+      "wall_s": 0.641
+    },
+    {
+      "index": 2,
+      "returncode": 0,
+      "wall_s": 0.859
+    },
+    {
+      "index": 3,
+      "returncode": 0,
+      "wall_s": 1.203
+    },
+    {
+      "index": 4,
+      "returncode": 0,
+      "wall_s": 18.25
+    },
+    {
+      "index": 5,
+      "returncode": 0,
+      "wall_s": 13.297
+    },
+    {
+      "index": 6,
+      "returncode": 0,
+      "wall_s": 9.735
+    },
+    {
+      "index": 7,
+      "returncode": 0,
+      "wall_s": 9.328
+    }
+  ],
+  "end_local": "2026-11-13T15:35:51",
+  "total_wall_s": 54.0,
+  "merged_rows": 96
+}

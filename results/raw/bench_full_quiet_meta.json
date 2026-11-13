@@ -1,0 +1,703 @@
+{
+  "tag": "full_quiet",
+  "start_local": "2026-11-13T15:51:06",
+  "git_revision": "5305649",
+  "args": {
+    "quick": false,
+    "sizes": [
+      128,
+      256,
+      512,
+      1024,
+      2048,
+      3072
+    ],
+    "threads": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      32
+    ],
+    "methods": [
+      "seq",
+      "omp",
+      "naive"
+    ],
+    "naive_max_n": 1024,
+    "reps": 10,
+    "warmup": 2,
+    "time_budget": 300.0,
+    "mem_budget": 2147483648,
+    "pin": "cores",
+    "proc_bind": "close",
+    "places": "cores",
+    "order_seed": 20251113,
+    "seed": 20250301,
+    "input_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\data",
+    "tag": "full_quiet",
+    "raw_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\results\\raw",
+    "dry_run": false,
+    "estimate_from": null
+  },
+  "environment": {
+    "OMP_DYNAMIC": "false",
+    "OMP_PROC_BIND": "close",
+    "OMP_PLACES": "cores",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "notes": [
+    "OMP_NUM_THREADS is set to p for every process.",
+    "libgomp (MinGW-w64) ignores OMP_PROC_BIND/OMP_PLACES on Windows; the proc_bind/places CSV columns are the requested values only. The affinity actually applied is given by the pin_mode and pinned_lps columns (bench.exe --pin, SetThreadAffinityMask).",
+    "Order: ascending n; (method, p) shuffled within each n with order_seed."
+  ],
+  "plan": [
+    {
+      "index": 0,
+      "n": 128,
+      "method": "omp",
+      "p": 6
+    },
+    {
+      "index": 1,
+      "n": 128,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 2,
+      "n": 128,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 3,
+      "n": 128,
+      "method": "omp",
+      "p": 32
+    },
+    {
+      "index": 4,
+      "n": 128,
+      "method": "omp",
+      "p": 2
+    },
+    {
+      "index": 5,
+      "n": 128,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 6,
+      "n": 128,
+      "method": "omp",
+      "p": 12
+    },
+    {
+      "index": 7,
+      "n": 128,
+      "method": "naive",
+      "p": 1
+    },
+    {
+      "index": 8,
+      "n": 128,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 9,
+      "n": 128,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 10,
+      "n": 256,
+      "method": "naive",
+      "p": 1
+    },
+    {
+      "index": 11,
+      "n": 256,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 12,
+      "n": 256,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 13,
+      "n": 256,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 14,
+      "n": 256,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 15,
+      "n": 256,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 16,
+      "n": 256,
+      "method": "omp",
+      "p": 32
+    },
+    {
+      "index": 17,
+      "n": 256,
+      "method": "omp",
+      "p": 2
+    },
+    {
+      "index": 18,
+      "n": 256,
+      "method": "omp",
+      "p": 12
+    },
+    {
+      "index": 19,
+      "n": 256,
+      "method": "omp",
+      "p": 6
+    },
+    {
+      "index": 20,
+      "n": 512,
+      "method": "omp",
+      "p": 32
+    },
+    {
+      "index": 21,
+      "n": 512,
+      "method": "naive",
+      "p": 1
+    },
+    {
+      "index": 22,
+      "n": 512,
+      "method": "omp",
+      "p": 6
+    },
+    {
+      "index": 23,
+      "n": 512,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 24,
+      "n": 512,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 25,
+      "n": 512,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 26,
+      "n": 512,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 27,
+      "n": 512,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 28,
+      "n": 512,
+      "method": "omp",
+      "p": 2
+    },
+    {
+      "index": 29,
+      "n": 512,
+      "method": "omp",
+      "p": 12
+    },
+    {
+      "index": 30,
+      "n": 1024,
+      "method": "omp",
+      "p": 6
+    },
+    {
+      "index": 31,
+      "n": 1024,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 32,
+      "n": 1024,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 33,
+      "n": 1024,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 34,
+      "n": 1024,
+      "method": "naive",
+      "p": 1
+    },
+    {
+      "index": 35,
+      "n": 1024,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 36,
+      "n": 1024,
+      "method": "omp",
+      "p": 2
+    },
+    {
+      "index": 37,
+      "n": 1024,
+      "method": "omp",
+      "p": 12
+    },
+    {
+      "index": 38,
+      "n": 1024,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 39,
+      "n": 1024,
+      "method": "omp",
+      "p": 32
+    },
+    {
+      "index": 40,
+      "n": 2048,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 41,
+      "n": 2048,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 42,
+      "n": 2048,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 43,
+      "n": 2048,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 44,
+      "n": 2048,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 45,
+      "n": 2048,
+      "method": "omp",
+      "p": 32
+    },
+    {
+      "index": 46,
+      "n": 2048,
+      "method": "omp",
+      "p": 6
+    },
+    {
+      "index": 47,
+      "n": 2048,
+      "method": "omp",
+      "p": 12
+    },
+    {
+      "index": 48,
+      "n": 2048,
+      "method": "omp",
+      "p": 2
+    },
+    {
+      "index": 49,
+      "n": 3072,
+      "method": "omp",
+      "p": 6
+    },
+    {
+      "index": 50,
+      "n": 3072,
+      "method": "omp",
+      "p": 4
+    },
+    {
+      "index": 51,
+      "n": 3072,
+      "method": "omp",
+      "p": 2
+    },
+    {
+      "index": 52,
+      "n": 3072,
+      "method": "omp",
+      "p": 12
+    },
+    {
+      "index": 53,
+      "n": 3072,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 54,
+      "n": 3072,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 55,
+      "n": 3072,
+      "method": "omp",
+      "p": 32
+    },
+    {
+      "index": 56,
+      "n": 3072,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 57,
+      "n": 3072,
+      "method": "omp",
+      "p": 1
+    }
+  ],
+  "events": [
+    {
+      "index": 0,
+      "returncode": 0,
+      "wall_s": 0.032
+    },
+    {
+      "index": 1,
+      "returncode": 0,
+      "wall_s": 0.14
+    },
+    {
+      "index": 2,
+      "returncode": 0,
+      "wall_s": 0.032
+    },
+    {
+      "index": 3,
+      "returncode": 0,
+      "wall_s": 0.031
+    },
+    {
+      "index": 4,
+      "returncode": 0,
+      "wall_s": 0.015
+    },
+    {
+      "index": 5,
+      "returncode": 0,
+      "wall_s": 0.032
+    },
+    {
+      "index": 6,
+      "returncode": 0,
+      "wall_s": 0.031
+    },
+    {
+      "index": 7,
+      "returncode": 0,
+      "wall_s": 0.031
+    },
+    {
+      "index": 8,
+      "returncode": 0,
+      "wall_s": 0.031
+    },
+    {
+      "index": 9,
+      "returncode": 0,
+      "wall_s": 0.016
+    },
+    {
+      "index": 10,
+      "returncode": 0,
+      "wall_s": 0.328
+    },
+    {
+      "index": 11,
+      "returncode": 0,
+      "wall_s": 0.078
+    },
+    {
+      "index": 12,
+      "returncode": 0,
+      "wall_s": 0.063
+    },
+    {
+      "index": 13,
+      "returncode": 0,
+      "wall_s": 0.078
+    },
+    {
+      "index": 14,
+      "returncode": 0,
+      "wall_s": 0.047
+    },
+    {
+      "index": 15,
+      "returncode": 0,
+      "wall_s": 0.078
+    },
+    {
+      "index": 16,
+      "returncode": 0,
+      "wall_s": 0.094
+    },
+    {
+      "index": 17,
+      "returncode": 0,
+      "wall_s": 0.062
+    },
+    {
+      "index": 18,
+      "returncode": 0,
+      "wall_s": 0.047
+    },
+    {
+      "index": 19,
+      "returncode": 0,
+      "wall_s": 0.031
+    },
+    {
+      "index": 20,
+      "returncode": 0,
+      "wall_s": 0.11
+    },
+    {
+      "index": 21,
+      "returncode": 0,
+      "wall_s": 2.218
+    },
+    {
+      "index": 22,
+      "returncode": 0,
+      "wall_s": 0.11
+    },
+    {
+      "index": 23,
+      "returncode": 0,
+      "wall_s": 0.515
+    },
+    {
+      "index": 24,
+      "returncode": 0,
+      "wall_s": 0.5
+    },
+    {
+      "index": 25,
+      "returncode": 0,
+      "wall_s": 0.094
+    },
+    {
+      "index": 26,
+      "returncode": 0,
+      "wall_s": 0.094
+    },
+    {
+      "index": 27,
+      "returncode": 0,
+      "wall_s": 0.141
+    },
+    {
+      "index": 28,
+      "returncode": 0,
+      "wall_s": 0.265
+    },
+    {
+      "index": 29,
+      "returncode": 0,
+      "wall_s": 0.11
+    },
+    {
+      "index": 30,
+      "returncode": 0,
+      "wall_s": 0.687
+    },
+    {
+      "index": 31,
+      "returncode": 0,
+      "wall_s": 3.984
+    },
+    {
+      "index": 32,
+      "returncode": 0,
+      "wall_s": 0.547
+    },
+    {
+      "index": 33,
+      "returncode": 0,
+      "wall_s": 1.032
+    },
+    {
+      "index": 34,
+      "returncode": 0,
+      "wall_s": 18.343
+    },
+    {
+      "index": 35,
+      "returncode": 0,
+      "wall_s": 4.047
+    },
+    {
+      "index": 36,
+      "returncode": 0,
+      "wall_s": 1.969
+    },
+    {
+      "index": 37,
+      "returncode": 0,
+      "wall_s": 0.672
+    },
+    {
+      "index": 38,
+      "returncode": 0,
+      "wall_s": 0.625
+    },
+    {
+      "index": 39,
+      "returncode": 0,
+      "wall_s": 0.531
+    },
+    {
+      "index": 40,
+      "returncode": 0,
+      "wall_s": 7.234
+    },
+    {
+      "index": 41,
+      "returncode": 0,
+      "wall_s": 12.094
+    },
+    {
+      "index": 42,
+      "returncode": 0,
+      "wall_s": 5.781
+    },
+    {
+      "index": 43,
+      "returncode": 0,
+      "wall_s": 42.735
+    },
+    {
+      "index": 44,
+      "returncode": 0,
+      "wall_s": 42.187
+    },
+    {
+      "index": 45,
+      "returncode": 0,
+      "wall_s": 6.032
+    },
+    {
+      "index": 46,
+      "returncode": 0,
+      "wall_s": 8.656
+    },
+    {
+      "index": 47,
+      "returncode": 0,
+      "wall_s": 6.734
+    },
+    {
+      "index": 48,
+      "returncode": 0,
+      "wall_s": 23.797
+    },
+    {
+      "index": 49,
+      "returncode": 0,
+      "wall_s": 31.047
+    },
+    {
+      "index": 50,
+      "returncode": 0,
+      "wall_s": 42.406
+    },
+    {
+      "index": 51,
+      "returncode": 0,
+      "wall_s": 86.438
+    },
+    {
+      "index": 52,
+      "returncode": 0,
+      "wall_s": 24.797
+    },
+    {
+      "index": 53,
+      "returncode": 0,
+      "wall_s": 25.64
+    },
+    {
+      "index": 54,
+      "returncode": 0,
+      "wall_s": 22.016
+    },
+    {
+      "index": 55,
+      "returncode": 0,
+      "wall_s": 37.328
+    },
+    {
+      "index": 56,
+      "returncode": 0,
+      "wall_s": 147.234
+    },
+    {
+      "index": 57,
+      "returncode": 0,
+      "wall_s": 147.391
+    }
+  ],
+  "end_local": "2026-11-13T16:03:43",
+  "total_wall_s": 757.5,
+  "merged_rows": 696
+}

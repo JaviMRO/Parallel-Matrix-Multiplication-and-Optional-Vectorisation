@@ -1,0 +1,23 @@
+Background CPU load sampled immediately before the full_quiet / unpinned_quiet sweeps
+Timestamp (UTC): 2026-11-13T15:51:05Z
+Method: per-process CPU-seconds consumed over a 5 s window (Get-Process)
+Total CPU-seconds in 5 s: 2.47
+
+Top processes:
+
+Name                        CpuSecIn5s
+----                        ----------
+QmlRenderer                       0,62
+Code                              0,53
+claude                            0,36
+Code                              0,25
+Code                              0,19
+iCUE                              0,16
+language_server_windows_x64       0,11
+powershell                        0,08
+Notion                            0,05
+Code                              0,02
+
+
+
+For comparison, a sample taken during/after the noisy 'full' sweep showed opera ~4.5, Code ~1.9, Spotify ~0.9 CPU-s per 5 s; a later sample showed a total of 6.66 CPU-s per 5 s (olk 2.3, Spotify 1.28, Code ~0.95).
