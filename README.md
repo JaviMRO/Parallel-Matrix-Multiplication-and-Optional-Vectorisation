@@ -251,8 +251,12 @@ used as primary data.
 ## Packaging the materials
 
 ```powershell
+python scripts/make_pdf.py                      # report/report.md -> report/report.pdf
 python scripts/make_zip.py --surname <Surname>
 ```
+
+`make_pdf.py` renders the Markdown with mistune and prints it to PDF with
+Microsoft Edge (or Chrome) in headless mode; no other tools are needed.
 
 Creates `Assignment03_<Surname>_Materials.zip` in the repository root with
 every file tracked by git (sources, scripts, build files, raw data, tables,
