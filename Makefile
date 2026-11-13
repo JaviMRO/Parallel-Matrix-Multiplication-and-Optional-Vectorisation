@@ -8,7 +8,8 @@ CFLAGS   := -O3 -fno-tree-vectorize -std=c11 -Wall -Wextra -Wpedantic
 OMPFLAGS := -fopenmp
 
 ifeq ($(OS),Windows_NT)
-  LDLIBS := -lpsapi
+  # -static: no dependency on the MSYS2 bin directory being on PATH
+  LDLIBS := -static -lpsapi
   EXE    := .exe
 else
   LDLIBS :=

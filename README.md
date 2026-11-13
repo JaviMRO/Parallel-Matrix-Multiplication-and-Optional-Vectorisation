@@ -38,3 +38,22 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/collect_env.ps1
 ```
 
 Writes `results/environment.txt`.
+
+## Correctness testing
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File build.ps1
+build\test.exe                      # unit tests; log in results/correctness/test_output.txt
+python scripts/validate_ref.py      # numpy reference (OPENBLAS_NUM_THREADS=1); log in results/correctness/validate_ref.txt
+```
+
+- Tolerance: `|x - y| <= atol + rtol*|y|` with `rtol = atol = 1e-12`. Bitwise
+  equality between the sequential and OpenMP results is checked and reported
+  separately (it holds, because both use the same per-element summation order).
+- ThreadSanitizer (`-fsanitize=thread`, tsan) is **not available** with
+  MinGW-w64 / MSYS2 UCRT64: libtsan is not shipped and the link fails (see
+  `results/correctness/tsan_unavailable.txt`). Data races were therefore not
+  checked with a dynamic tool. Supporting evidence: the disjoint-rows design of
+  `matmul_omp.c` (`schedule(static)` over rows of C; A and B read-only) and the
+  bitwise equality of OpenMP and sequential results for n = 1, 7, 64, 100, 257
+  and p = 1, 2, 3, 4, 8, 16, 32.

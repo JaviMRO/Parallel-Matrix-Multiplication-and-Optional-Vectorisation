@@ -37,7 +37,9 @@ $Gcc   = Join-Path $GccDir "gcc.exe"
 # thread-scaling study is not mixed with SIMD effects. See README.
 $CFlags   = @("-O3", "-fno-tree-vectorize", "-std=c11", "-Wall", "-Wextra", "-Wpedantic")
 $OmpFlags = @("-fopenmp")
-$LdLibs   = @("-lpsapi")
+# -static: executables embed libgomp/winpthreads, so they run without the
+# MSYS2 bin directory on PATH and always use the runtime they were built with.
+$LdLibs   = @("-static", "-lpsapi")
 
 # Library objects: source file -> needs OpenMP?
 $Units = [ordered]@{
