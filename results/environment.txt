@@ -1,0 +1,57 @@
+﻿Environment report
+Generated: 2026-11-13T12:54:09+00:00
+Host: DESKTOP-Q8Q1E0H
+Git revision: b116746
+
+== CPU ==
+Model: Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz
+Sockets: 1
+Physical cores: 8
+Logical processors: 16
+SMT (Hyper-Threading) active: True
+Base clock (MHz): 3792
+Current clock at collection (MHz): 3792
+Architecture: AMD64 / Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+
+== Caches (GetLogicalProcessorInformation) ==
+L1 Data       : 32 KiB per instance x 8 instances (line 64 B, 8-way, shared by 2 logical processors)
+L1 Instruction: 32 KiB per instance x 8 instances (line 64 B, 8-way, shared by 2 logical processors)
+L2 Unified    : 256 KiB per instance x 8 instances (line 64 B, 4-way, shared by 2 logical processors)
+L3 Unified    : 16384 KiB per instance x 1 instances (line 64 B, 16-way, shared by 16 logical processors)
+Processor cores reported by API: 8
+
+== Memory ==
+Total physical RAM: 15.85 GiB (17013547008 bytes)
+Free physical RAM at collection: 1.94 GiB
+DIMM ChannelA-DIMM2: 8 GiB @ 2933 MT/s (Kingston)
+DIMM ChannelB-DIMM2: 8 GiB @ 2933 MT/s (Kingston)
+
+== Operating system ==
+OS: Microsoft Windows 11 Pro 10.0.26300 (build 26300), 64 bits
+Active power plan: GUID de plan de energía: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (Alto rendimiento)
+
+== Compiler ==
+gcc path: C:\msys64\ucrt64\bin\gcc.exe
+gcc version: gcc.exe (Rev2, Built by MSYS2 project) 14.2.0
+gcc target: x86_64-w64-mingw32
+OpenMP macro: #define _OPENMP 201511 (201511 = OpenMP 4.5)
+objdump: GNU objdump (GNU Binutils) 2.44
+
+== Python ==
+Python: 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)]
+numpy: 2.2.3
+pandas: 2.3.3
+matplotlib: 3.10.0
+scipy: 1.15.3
+numpy BLAS: scipy-openblas 0.3.28
+
+== Threading-related environment variables (at collection time) ==
+OMP_NUM_THREADS=<unset>
+OMP_DYNAMIC=<unset>
+OMP_PROC_BIND=<unset>
+OMP_PLACES=<unset>
+OMP_WAIT_POLICY=<unset>
+GOMP_SPINCOUNT=<unset>
+OPENBLAS_NUM_THREADS=<unset>
+MKL_NUM_THREADS=<unset>
+Note: the benchmark runner sets these explicitly per run and records them in the raw CSV.

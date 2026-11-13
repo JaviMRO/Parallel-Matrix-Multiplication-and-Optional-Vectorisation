@@ -1,0 +1,35 @@
+# Build outputs (regenerate with build.ps1 or the Makefile)
+build/
+*.exe
+*.o
+*.obj
+*.s
+*.d
+
+# Generated input matrices (regenerate deterministically from the fixed seed)
+data/*.bin
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editor / OS clutter
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local Claude Code configuration (not part of the deliverable)
+.claude/
+
+# Packaging
+Assignment03_*_Materials.zip
+
+# Keep empty directories in the repository
+!**/.gitkeep
+
+# Assembly excerpts and compiler reports are deliverables (optional SIMD part)
+!results/vectorisation_evidence/**
