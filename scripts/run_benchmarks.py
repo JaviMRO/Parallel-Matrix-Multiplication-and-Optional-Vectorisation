@@ -69,6 +69,9 @@ def parse_args():
                     help="seed of the randomised configuration order")
     ap.add_argument("--seed", type=int, default=20250301, help="input matrix seed")
     ap.add_argument("--input-dir", default=str(ROOT / "data"))
+    ap.add_argument("--bench-exe", type=Path, default=BENCH,
+                    help="benchmark executable (e.g. build/simd/bench.exe for the "
+                         "vectorised variant)")
     ap.add_argument("--tag", default=None, help="name of the run (default: timestamp)")
     ap.add_argument("--raw-dir", type=Path, default=RAW_DIR,
                     help="output directory for the raw CSV, metadata and log")
@@ -210,8 +213,9 @@ def main():
             print(f"  [{i:3d}] n={n:<5} {m:<5} p={p}")
         return 0
 
-    if not BENCH.exists():
-        sys.exit(f"{BENCH} not found; build first")
+    bench = args.bench_exe.resolve()
+    if not bench.exists():
+        sys.exit(f"{bench} not found; build first")
     parts_dir.mkdir(parents=True, exist_ok=True)
     Path(args.input_dir).mkdir(parents=True, exist_ok=True)
 
@@ -246,7 +250,7 @@ def main():
     }
 
     # The CSV schema comes from bench.exe itself, so marker rows always match it.
-    header = subprocess.run([str(BENCH), "--print-csv-header"], capture_output=True,
+    header = subprocess.run([str(bench), "--print-csv-header"], capture_output=True,
                             text=True, check=True).stdout.strip().split(",")
     logical = os.cpu_count() or 0
 
@@ -272,7 +276,7 @@ def main():
                 continue
 
             env = dict(base_env, OMP_NUM_THREADS=str(p))
-            cmd = [str(BENCH), "--method", method, "--n", str(n), "--threads", str(p),
+            cmd = [str(bench), "--method", method, "--n", str(n), "--threads", str(p),
                    "--reps", str(args.reps), "--warmup", str(args.warmup),
                    "--seed", str(args.seed), "--pin", args.pin,
                    "--input-dir", args.input_dir, "--time-budget", str(args.time_budget),

@@ -1,0 +1,2 @@
+# gcc -O3 -fno-tree-vectorize -std=c11 -Wall -Wextra -Wpedantic -fopt-info-vec-all -c src/matmul_seq.c
+

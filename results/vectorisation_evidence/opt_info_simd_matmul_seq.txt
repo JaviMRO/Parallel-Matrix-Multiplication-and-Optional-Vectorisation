@@ -1,0 +1,22 @@
+# gcc -O3 -march=native -std=c11 -Wall -Wextra -Wpedantic -fopt-info-vec-all -c src/matmul_seq.c
+
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:15:26: missed: couldn't vectorize loop
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:15:26: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:39:26: missed: couldn't vectorize loop
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:43:19: missed: not vectorized: complicated access pattern.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 32 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 16 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:40:30: missed: couldn't vectorize loop
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:40:22: missed: not vectorized: complicated access pattern.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 32 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 16 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: vectorized 2 loops in function.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:37:15: missed: statement clobbers memory: __builtin_memset (Ci_14, 0, _10);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** Analysis failed with vector mode V4DF
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** The result for vector mode V32QI would be the same
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** Re-trying analysis with vector mode V16QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** Analysis failed with vector mode V16QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** Re-trying analysis with vector mode V8QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** Analysis failed with vector mode V8QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** Re-trying analysis with vector mode V4QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_seq.c:11:6: note: ***** Analysis failed with vector mode V4QI

@@ -11,16 +11,27 @@
     (matmul_omp.c and the programs that call the OpenMP runtime API);
     matmul_seq.c and matmul_naive.c refuse to compile with it (#error).
 
-    Outputs go to build/. build/build_info.h records the flags and compiler
-    version so the benchmark can write them into every CSV row.
+    Two variants share the same sources:
+      scalar (default) -> build/       -O3 -fno-tree-vectorize (main experiment)
+      simd             -> build/simd/  -O3 -march=native (auto-vectorisation
+                                       enabled, AVX2 on the benchmark machine)
+    For C in ISO mode (-std=c11) gcc defaults to -ffp-contract=off, so the
+    simd variant does not fuse a*b+c into FMA instructions (checked by
+    scripts/collect_vec_evidence.ps1) and rounds exactly like the scalar one.
+
+    Outputs go to the variant's directory. build_info.h records the flags and
+    compiler version so the benchmark can write them into every CSV row.
 
 .EXAMPLE
     powershell -NoProfile -ExecutionPolicy Bypass -File build.ps1
+    powershell -NoProfile -ExecutionPolicy Bypass -File build.ps1 -Variant simd
     powershell -NoProfile -ExecutionPolicy Bypass -File build.ps1 -Target clean
 #>
 param(
     [ValidateSet("all", "clean")]
     [string]$Target = "all",
+    [ValidateSet("scalar", "simd")]
+    [string]$Variant = "scalar",
     [string]$GccDir = "C:\msys64\ucrt64\bin"
 )
 
@@ -31,11 +42,18 @@ $ErrorActionPreference = "Continue"
 $Root  = $PSScriptRoot
 $Src   = Join-Path $Root "src"
 $Build = Join-Path $Root "build"
+if ($Variant -eq "simd") { $Build = Join-Path $Build "simd" }
 $Gcc   = Join-Path $GccDir "gcc.exe"
 
-# Main experiment flags: scalar code (no auto-vectorisation, no -march), so the
-# thread-scaling study is not mixed with SIMD effects. See README.
-$CFlags   = @("-O3", "-fno-tree-vectorize", "-std=c11", "-Wall", "-Wextra", "-Wpedantic")
+$Warn = @("-std=c11", "-Wall", "-Wextra", "-Wpedantic")
+if ($Variant -eq "simd") {
+    # Optional vectorisation study: let gcc auto-vectorise for the host ISA.
+    $CFlags = @("-O3", "-march=native") + $Warn
+} else {
+    # Main experiment flags: scalar code (no auto-vectorisation, no -march), so
+    # the thread-scaling study is not mixed with SIMD effects. See README.
+    $CFlags = @("-O3", "-fno-tree-vectorize") + $Warn
+}
 $OmpFlags = @("-fopenmp")
 # -static: executables embed libgomp/winpthreads, so they run without the
 # MSYS2 bin directory on PATH and always use the runtime they were built with.
@@ -118,4 +136,4 @@ foreach ($main in $Programs.Keys) {
     Invoke-Gcc ($CFlags + $OmpFlags + @("-I", $Build, $srcFile) + $objects + @("-o", $exe) + $LdLibs)
 }
 
-Write-Host "Build OK -> $Build"
+Write-Host "Build OK ($Variant) -> $Build"

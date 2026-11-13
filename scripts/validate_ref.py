@@ -19,7 +19,8 @@ src/test.c for many n and p.
 
 Usage:
     python scripts/validate_ref.py [--sizes 64 257 512] [--threads 8]
-Writes a log to results/correctness/validate_ref.txt. Exit code 0 = pass.
+                                   [--test-exe build/simd/test.exe] [--log FILE]
+Writes a log to results/correctness/validate_ref.txt (or --log). Exit code 0 = pass.
 """
 
 import os
@@ -87,7 +88,7 @@ def blas_threads():
     return ", ".join(info) or "no BLAS pool detected"
 
 
-def validate(n, seed, threads, log):
+def validate(n, seed, threads, log, test_exe=TEST_EXE):
     paths = {
         "A": DATA_DIR / f"A_n{n}_s{seed}.bin",
         "B": DATA_DIR / f"B_n{n}_s{seed}.bin",
@@ -95,16 +96,16 @@ def validate(n, seed, threads, log):
         "C_omp": DATA_DIR / f"C_omp_p{threads}_n{n}_s{seed}.bin",
     }
     try:
-        return _validate_dumped(n, seed, threads, paths, log)
+        return _validate_dumped(n, seed, threads, paths, log, test_exe)
     finally:
         # Remove dumped files even if the dump or a check failed part-way.
         for path in paths.values():
             path.unlink(missing_ok=True)
 
 
-def _validate_dumped(n, seed, threads, paths, log):
+def _validate_dumped(n, seed, threads, paths, log, test_exe):
     proc = subprocess.run(
-        [str(TEST_EXE), "--dump", str(n), str(seed), str(DATA_DIR), str(threads)],
+        [str(test_exe), "--dump", str(n), str(seed), str(DATA_DIR), str(threads)],
         capture_output=True, text=True,
     )
     if proc.returncode != 0:
@@ -148,12 +149,16 @@ def main():
     parser.add_argument("--sizes", type=int, nargs="+", default=[64, 257, 512])
     parser.add_argument("--threads", type=int, default=8)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
+    parser.add_argument("--test-exe", type=Path, default=TEST_EXE,
+                        help="test executable (e.g. build/simd/test.exe)")
+    parser.add_argument("--log", type=Path, default=LOG_FILE, help="output log file")
     args = parser.parse_args()
 
-    if not TEST_EXE.exists():
-        sys.exit(f"{TEST_EXE} not found; build first (build.ps1 or make)")
+    test_exe = args.test_exe.resolve()
+    if not test_exe.exists():
+        sys.exit(f"{test_exe} not found; build first (build.ps1 or make)")
     DATA_DIR.mkdir(exist_ok=True)
-    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    args.log.parent.mkdir(parents=True, exist_ok=True)
 
     lines = []
 
@@ -164,10 +169,11 @@ def main():
     log(f"Reference validation against numpy {np.__version__} "
         f"(rtol={RTOL:g}, atol={ATOL:g}, seed={args.seed})")
     log(f"BLAS threads: {blas_threads()}")
-    results = [validate(n, args.seed, args.threads, log) for n in args.sizes]
+    log(f"Executable: {test_exe.relative_to(ROOT).as_posix() if test_exe.is_relative_to(ROOT) else test_exe}")
+    results = [validate(n, args.seed, args.threads, log, test_exe) for n in args.sizes]
     passed = all(results)
     log("VALIDATION PASSED" if passed else "VALIDATION FAILED")
-    LOG_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    args.log.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return 0 if passed else 1
 
 

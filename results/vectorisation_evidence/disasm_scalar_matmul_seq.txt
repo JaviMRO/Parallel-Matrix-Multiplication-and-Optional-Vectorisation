@@ -1,0 +1,114 @@
+
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\matmul_seq.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <matmul_seq>:
+   0:	push   %r15
+   2:	push   %r14
+   4:	push   %r13
+   6:	push   %r12
+   8:	push   %rbp
+   9:	push   %rdi
+   a:	push   %rsi
+   b:	push   %rbx
+   c:	sub    $0x38,%rsp
+  10:	xor    %ebx,%ebx
+  12:	movslq %r9d,%r10
+  15:	mov    %rcx,0x80(%rsp)
+  1d:	mov    %rdx,%rbp
+  20:	mov    %r8,%rcx
+  23:	test   %r10d,%r10d
+  26:	cmovns %r10,%rbx
+  2a:	jle    165 <matmul_seq+0x165>
+  30:	lea    0x0(,%rbx,8),%r15
+  38:	mov    %r10d,0x98(%rsp)
+  40:	mov    %rbx,%rdi
+  43:	xor    %r14d,%r14d
+  46:	lea    (%rdx,%r15,1),%rax
+  4a:	mov    0x80(%rsp),%rsi
+  52:	shl    $0x4,%rdi
+  56:	mov    %rax,0x28(%rsp)
+  5b:	lea    -0x3(%rbx),%rax
+  5f:	shr    $1,%rax
+  62:	lea    0x2(%rax,%rax,1),%r12
+  67:	mov    %r12,%r13
+  6a:	mov    %r15,%r12
+  6d:	mov    %r14,%r15
+  70:	xor    %edx,%edx
+  72:	mov    %r12,%r8
+  75:	call   7a <matmul_seq+0x7a>
+  7a:	cmpl   $0x2,0x98(%rsp)
+  82:	mov    %rax,%rcx
+  85:	jle    176 <matmul_seq+0x176>
+  8b:	mov    0x28(%rsp),%rdx
+  90:	mov    %rbp,%r9
+  93:	xor    %r10d,%r10d
+  96:	cs nopw 0x0(%rax,%rax,1)
+  a0:	movsd  (%rsi,%r10,8),%xmm3
+  a6:	movsd  0x8(%rsi,%r10,8),%xmm2
+  ad:	xor    %eax,%eax
+  af:	data16 cs nopw 0x0(%rax,%rax,1)
+  ba:	nopw   0x0(%rax,%rax,1)
+  c0:	movsd  (%rdx,%rax,8),%xmm1
+  c5:	movsd  (%r9,%rax,8),%xmm0
+  cb:	mulsd  %xmm2,%xmm1
+  cf:	mulsd  %xmm3,%xmm0
+  d3:	addsd  (%rcx,%rax,8),%xmm0
+  d8:	addsd  %xmm1,%xmm0
+  dc:	movsd  %xmm0,(%rcx,%rax,8)
+  e1:	add    $0x1,%rax
+  e5:	cmp    %rax,%rbx
+  e8:	jne    c0 <matmul_seq+0xc0>
+  ea:	add    $0x2,%r10
+  ee:	add    %rdi,%r9
+  f1:	add    %rdi,%rdx
+  f4:	cmp    %r13,%r10
+  f7:	jne    a0 <matmul_seq+0xa0>
+  f9:	mov    %r13,%r10
+  fc:	mov    %r10,%rdx
+  ff:	mov    0x80(%rsp),%rax
+ 107:	imul   %r12,%rdx
+ 10b:	lea    (%rax,%r14,8),%r11
+ 10f:	add    %rbp,%rdx
+ 112:	movsd  (%r11,%r10,8),%xmm1
+ 118:	xor    %eax,%eax
+ 11a:	nopw   0x0(%rax,%rax,1)
+ 120:	movsd  (%rdx,%rax,8),%xmm0
+ 125:	mov    %rax,%r9
+ 128:	mulsd  %xmm1,%xmm0
+ 12c:	addsd  (%rcx,%rax,8),%xmm0
+ 131:	movsd  %xmm0,(%rcx,%rax,8)
+ 136:	add    $0x1,%rax
+ 13a:	cmp    %rax,%rbx
+ 13d:	jne    120 <matmul_seq+0x120>
+ 13f:	add    $0x1,%r10
+ 143:	add    %r12,%rdx
+ 146:	cmp    %rbx,%r10
+ 149:	jb     112 <matmul_seq+0x112>
+ 14b:	lea    0x1(%r15),%rax
+ 14f:	add    %r12,%rcx
+ 152:	add    %rbx,%r14
+ 155:	add    %r12,%rsi
+ 158:	cmp    %r9,%r15
+ 15b:	je     165 <matmul_seq+0x165>
+ 15d:	mov    %rax,%r15
+ 160:	jmp    70 <matmul_seq+0x70>
+ 165:	add    $0x38,%rsp
+ 169:	pop    %rbx
+ 16a:	pop    %rsi
+ 16b:	pop    %rdi
+ 16c:	pop    %rbp
+ 16d:	pop    %r12
+ 16f:	pop    %r13
+ 171:	pop    %r14
+ 173:	pop    %r15
+ 175:	ret
+ 176:	xor    %r10d,%r10d
+ 179:	jmp    fc <matmul_seq+0xfc>
+ 17b:	nop
+ 17c:	nop
+ 17d:	nop
+ 17e:	nop
+ 17f:	nop

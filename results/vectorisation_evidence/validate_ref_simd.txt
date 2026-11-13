@@ -1,0 +1,16 @@
+Reference validation against numpy 2.2.3 (rtol=1e-12, atol=1e-12, seed=20250301)
+BLAS threads: openblas=1
+Executable: build/simd/test.exe
+n=64    inputs bit-identical to Python SplitMix64: yes
+        C_seq        vs numpy: max abs err 7.105e-15, max rel err 4.353e-16, allclose(rtol=atol=1e-12): yes, bitwise equal to numpy: no
+        C_omp(p=8)   vs numpy: max abs err 7.105e-15, max rel err 4.353e-16, allclose(rtol=atol=1e-12): yes, bitwise equal to numpy: no
+        C_omp(p=8) bitwise identical to C_seq: yes
+n=257   inputs bit-identical to Python SplitMix64: yes
+        C_seq        vs numpy: max abs err 1.421e-13, max rel err 2.047e-15, allclose(rtol=atol=1e-12): yes, bitwise equal to numpy: no
+        C_omp(p=8)   vs numpy: max abs err 1.421e-13, max rel err 2.047e-15, allclose(rtol=atol=1e-12): yes, bitwise equal to numpy: no
+        C_omp(p=8) bitwise identical to C_seq: yes
+n=512   inputs bit-identical to Python SplitMix64: yes
+        C_seq        vs numpy: max abs err 3.979e-13, max rel err 2.996e-15, allclose(rtol=atol=1e-12): yes, bitwise equal to numpy: no
+        C_omp(p=8)   vs numpy: max abs err 3.979e-13, max rel err 2.996e-15, allclose(rtol=atol=1e-12): yes, bitwise equal to numpy: no
+        C_omp(p=8) bitwise identical to C_seq: yes
+VALIDATION PASSED

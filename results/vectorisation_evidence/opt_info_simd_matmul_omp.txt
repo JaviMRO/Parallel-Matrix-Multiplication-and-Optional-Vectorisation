@@ -1,0 +1,56 @@
+# gcc -O3 -march=native -std=c11 -Wall -Wextra -Wpedantic -fopenmp -fopt-info-vec-all -c src/matmul_omp.c
+
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:33:33: missed: couldn't vectorize loop
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:33:33: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:39:26: missed: couldn't vectorize loop
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:43:19: missed: not vectorized: complicated access pattern.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 32 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 16 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:40:30: missed: couldn't vectorize loop
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:40:22: missed: not vectorized: complicated access pattern.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 32 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:42:30: optimized: loop vectorized using 16 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: vectorized 2 loops in function.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul.h:37:15: missed: statement clobbers memory: __builtin_memset (Ci_26, 0, _47);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Analysis failed with vector mode V4DI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** The result for vector mode V32QI would be the same
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Re-trying analysis with vector mode V16QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Analysis failed with vector mode V16QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Re-trying analysis with vector mode V8QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Analysis failed with vector mode V8QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Re-trying analysis with vector mode V4QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Analysis failed with vector mode V4QI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:7:6: note: vectorized 0 loops in function.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:7:6: missed: statement clobbers memory: __builtin_GOMP_parallel (matmul_omp._omp_fn.0, &.omp_data_o.2, 0, 0);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** Analysis succeeded with vector mode V4DI
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: SLPing BB part
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: Costing subgraph: 
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: node 0000000003a52138 (max_nunits=2, refcnt=1) vector(2) long long unsigned int
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: op template: .omp_data_o.2.C = C_9(D);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	stmt 0 .omp_data_o.2.C = C_9(D);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	stmt 1 .omp_data_o.2.B = B_7(D);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	children 0000000003a521b8
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: node (external) 0000000003a521b8 (max_nunits=1, refcnt=1) vector(2) long long unsigned int
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	{ C_9(D), B_7(D) }
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: Cost model analysis: 
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: Cost model analysis for part in loop 0:
+  Vector cost: 32
+  Scalar cost: 32
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: Basic block will be vectorized using SLP
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: optimized: basic block part vectorized using 16 byte vectors
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: Vectorizing SLP tree:
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: node 0000000003a52138 (max_nunits=2, refcnt=1) vector(2) long long unsigned int
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: op template: .omp_data_o.2.C = C_9(D);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	stmt 0 .omp_data_o.2.C = C_9(D);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	stmt 1 .omp_data_o.2.B = B_7(D);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	children 0000000003a521b8
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: node (external) 0000000003a521b8 (max_nunits=1, refcnt=1) vector(2) long long unsigned int
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: 	{ C_9(D), B_7(D) }
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ------>vectorizing SLP node starting from: .omp_data_o.2.C = C_9(D);
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: vect_is_simple_use: operand B_7(D), type of def: external
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: transform store. ncopies = 1
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: create vector_type-pointer variable to type: vector(2) long long unsigned int  vectorizing a pointer ref: .omp_data_o.2.C
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: created &.omp_data_o.2.C
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: add new stmt: MEM <vector(2) long long unsigned int> [(double * *)&.omp_data_o.2 + 8B] = _16;
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: vectorizing stmts using SLP.
+C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\src\matmul_omp.c:23:13: note: ***** The result for vector mode V32QI would be the same
