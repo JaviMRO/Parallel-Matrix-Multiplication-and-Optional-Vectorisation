@@ -1,0 +1,234 @@
+{
+  "tag": "simd_quiet",
+  "start_local": "2026-11-13T17:20:42",
+  "git_revision": "2b34269",
+  "args": {
+    "quick": false,
+    "sizes": [
+      512,
+      1024,
+      2048,
+      3072
+    ],
+    "threads": [
+      1,
+      8,
+      16
+    ],
+    "methods": [
+      "seq",
+      "omp"
+    ],
+    "naive_max_n": 1024,
+    "reps": 10,
+    "warmup": 2,
+    "time_budget": 300.0,
+    "mem_budget": 2147483648,
+    "pin": "cores",
+    "proc_bind": "close",
+    "places": "cores",
+    "order_seed": 20251113,
+    "seed": 20250301,
+    "input_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\data",
+    "bench_exe": "build\\simd\\bench.exe",
+    "tag": "simd_quiet",
+    "raw_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\results\\raw",
+    "dry_run": false,
+    "estimate_from": null
+  },
+  "environment": {
+    "OMP_DYNAMIC": "false",
+    "OMP_PROC_BIND": "close",
+    "OMP_PLACES": "cores",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "notes": [
+    "OMP_NUM_THREADS is set to p for every process.",
+    "libgomp (MinGW-w64) ignores OMP_PROC_BIND/OMP_PLACES on Windows; the proc_bind/places CSV columns are the requested values only. The affinity actually applied is given by the pin_mode and pinned_lps columns (bench.exe --pin, SetThreadAffinityMask).",
+    "Order: ascending n; (method, p) shuffled within each n with order_seed."
+  ],
+  "plan": [
+    {
+      "index": 0,
+      "n": 512,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 1,
+      "n": 512,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 2,
+      "n": 512,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 3,
+      "n": 512,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 4,
+      "n": 1024,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 5,
+      "n": 1024,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 6,
+      "n": 1024,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 7,
+      "n": 1024,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 8,
+      "n": 2048,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 9,
+      "n": 2048,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 10,
+      "n": 2048,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 11,
+      "n": 2048,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 12,
+      "n": 3072,
+      "method": "seq",
+      "p": 1
+    },
+    {
+      "index": 13,
+      "n": 3072,
+      "method": "omp",
+      "p": 1
+    },
+    {
+      "index": 14,
+      "n": 3072,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 15,
+      "n": 3072,
+      "method": "omp",
+      "p": 8
+    }
+  ],
+  "events": [
+    {
+      "index": 0,
+      "returncode": 0,
+      "wall_s": 0.125
+    },
+    {
+      "index": 1,
+      "returncode": 0,
+      "wall_s": 0.11
+    },
+    {
+      "index": 2,
+      "returncode": 0,
+      "wall_s": 0.312
+    },
+    {
+      "index": 3,
+      "returncode": 0,
+      "wall_s": 0.313
+    },
+    {
+      "index": 4,
+      "returncode": 0,
+      "wall_s": 4.765
+    },
+    {
+      "index": 5,
+      "returncode": 0,
+      "wall_s": 4.125
+    },
+    {
+      "index": 6,
+      "returncode": 0,
+      "wall_s": 0.547
+    },
+    {
+      "index": 7,
+      "returncode": 0,
+      "wall_s": 0.719
+    },
+    {
+      "index": 8,
+      "returncode": 0,
+      "wall_s": 18.812
+    },
+    {
+      "index": 9,
+      "returncode": 0,
+      "wall_s": 71.297
+    },
+    {
+      "index": 10,
+      "returncode": 0,
+      "wall_s": 77.797
+    },
+    {
+      "index": 11,
+      "returncode": 0,
+      "wall_s": 22.219
+    },
+    {
+      "index": 12,
+      "returncode": 0,
+      "wall_s": 241.109
+    },
+    {
+      "index": 13,
+      "returncode": 0,
+      "wall_s": 238.031
+    },
+    {
+      "index": 14,
+      "returncode": 0,
+      "wall_s": 87.657
+    },
+    {
+      "index": 15,
+      "returncode": 0,
+      "wall_s": 83.906
+    }
+  ],
+  "end_local": "2026-11-13T17:34:54",
+  "total_wall_s": 851.9,
+  "merged_rows": 192
+}

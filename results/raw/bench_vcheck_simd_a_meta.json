@@ -1,0 +1,98 @@
+{
+  "tag": "vcheck_simd_a",
+  "start_local": "2026-11-13T18:09:56",
+  "git_revision": "2b34269",
+  "args": {
+    "quick": false,
+    "sizes": [
+      2048,
+      3072
+    ],
+    "threads": [
+      8,
+      16
+    ],
+    "methods": [
+      "omp"
+    ],
+    "naive_max_n": 1024,
+    "reps": 10,
+    "warmup": 2,
+    "time_budget": 300.0,
+    "mem_budget": 2147483648,
+    "pin": "cores",
+    "proc_bind": "close",
+    "places": "cores",
+    "order_seed": 20251113,
+    "seed": 20250301,
+    "input_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\data",
+    "bench_exe": "build\\simd\\bench.exe",
+    "tag": "vcheck_simd_a",
+    "raw_dir": "C:\\Users\\Javier\\Desktop\\CLASE\\TERCERO DATOS\\BD\\INDIVIDUAL ASSIGMENTS\\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\\results\\raw",
+    "dry_run": false,
+    "estimate_from": null
+  },
+  "environment": {
+    "OMP_DYNAMIC": "false",
+    "OMP_PROC_BIND": "close",
+    "OMP_PLACES": "cores",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "notes": [
+    "OMP_NUM_THREADS is set to p for every process.",
+    "libgomp (MinGW-w64) ignores OMP_PROC_BIND/OMP_PLACES on Windows; the proc_bind/places CSV columns are the requested values only. The affinity actually applied is given by the pin_mode and pinned_lps columns (bench.exe --pin, SetThreadAffinityMask).",
+    "Order: ascending n; (method, p) shuffled within each n with order_seed."
+  ],
+  "plan": [
+    {
+      "index": 0,
+      "n": 2048,
+      "method": "omp",
+      "p": 16
+    },
+    {
+      "index": 1,
+      "n": 2048,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 2,
+      "n": 3072,
+      "method": "omp",
+      "p": 8
+    },
+    {
+      "index": 3,
+      "n": 3072,
+      "method": "omp",
+      "p": 16
+    }
+  ],
+  "events": [
+    {
+      "index": 0,
+      "returncode": 0,
+      "wall_s": 4.343
+    },
+    {
+      "index": 1,
+      "returncode": 0,
+      "wall_s": 6.688
+    },
+    {
+      "index": 2,
+      "returncode": 0,
+      "wall_s": 25.844
+    },
+    {
+      "index": 3,
+      "returncode": 0,
+      "wall_s": 16.609
+    }
+  ],
+  "end_local": "2026-11-13T18:10:50",
+  "total_wall_s": 53.5,
+  "merged_rows": 48
+}

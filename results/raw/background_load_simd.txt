@@ -1,0 +1,22 @@
+Background CPU load sampled immediately before the simd_quiet / scalar_ctrl_quiet sweeps
+Timestamp (UTC): 2026-11-13T17:20:32Z
+Method: per-process CPU-seconds consumed over a 5 s window (Get-Process)
+Note: the web browser (Opera) could not be closed for these runs, at the user's request.
+Total CPU-seconds in 5 s: 14.74
+
+Top processes:
+
+Name        CpuSecIn5s
+----        ----------
+opera              8,8
+opera             1,47
+Code              0,97
+QmlRenderer       0,72
+iCUE              0,56
+opera             0,41
+Code              0,34
+opera             0,33
+claude            0,22
+Code              0,14
+
+

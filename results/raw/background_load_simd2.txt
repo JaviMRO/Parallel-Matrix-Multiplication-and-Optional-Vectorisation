@@ -1,0 +1,21 @@
+Background CPU load sampled immediately before the simd_quiet2 / scalar_ctrl_quiet2 sweeps
+Timestamp (UTC): 2026-11-13T17:54:40Z
+Method: per-process CPU-seconds consumed over a 5 s window (Get-Process)
+Total CPU-seconds in 5 s: 2.84
+
+Top processes:
+
+Name            CpuSecIn5s
+----            ----------
+QmlRenderer           0,58
+Code                  0,44
+Code                  0,41
+iCUE                  0,23
+claude                0,22
+NGenuity2Helper       0,14
+Code                  0,14
+Code                  0,11
+powershell            0,09
+Code                  0,08
+
+
