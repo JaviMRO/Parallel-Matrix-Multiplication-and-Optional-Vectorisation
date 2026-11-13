@@ -2,7 +2,7 @@
 
 **Big Data – Assignment 3**
 
-**Author:** _[student name]_ — **Date:** November 2026
+**Author:** Javier Martin Rodriguez — **Date:** November 2026
 
 ---
 
