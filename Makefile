@@ -19,7 +19,8 @@ endif
 SRC   := src
 BUILD := build
 
-OBJS_SEQ := $(BUILD)/matmul_seq.o $(BUILD)/matmul_naive.o $(BUILD)/inputs.o $(BUILD)/timing.o
+OBJS_SEQ := $(BUILD)/matmul_seq.o $(BUILD)/matmul_naive.o $(BUILD)/inputs.o $(BUILD)/timing.o \
+            $(BUILD)/affinity.o
 OBJS_OMP := $(BUILD)/matmul_omp.o
 OBJS     := $(OBJS_SEQ) $(OBJS_OMP)
 

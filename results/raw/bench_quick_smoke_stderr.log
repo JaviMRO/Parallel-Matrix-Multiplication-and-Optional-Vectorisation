@@ -1,0 +1,160 @@
+=== [0] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 6 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_000_omp_n128_p6.csv --run-id quick_smoke --config-index 0
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [1] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 16 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_001_omp_n128_p16.csv --run-id quick_smoke --config-index 1
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [2] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method seq --n 128 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_002_seq_n128_p1.csv --run-id quick_smoke --config-index 2
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [3] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 32 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_003_omp_n128_p32.csv --run-id quick_smoke --config-index 3
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [4] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 2 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_004_omp_n128_p2.csv --run-id quick_smoke --config-index 4
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [5] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 4 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_005_omp_n128_p4.csv --run-id quick_smoke --config-index 5
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [6] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 12 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_006_omp_n128_p12.csv --run-id quick_smoke --config-index 6
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [7] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method naive --n 128 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_007_naive_n128_p1.csv --run-id quick_smoke --config-index 7
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [8] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 8 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_008_omp_n128_p8.csv --run-id quick_smoke --config-index 8
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [9] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 128 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_009_omp_n128_p1.csv --run-id quick_smoke --config-index 9
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [10] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method naive --n 256 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_010_naive_n256_p1.csv --run-id quick_smoke --config-index 10
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [11] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method seq --n 256 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_011_seq_n256_p1.csv --run-id quick_smoke --config-index 11
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [12] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 16 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_012_omp_n256_p16.csv --run-id quick_smoke --config-index 12
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [13] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 8 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_013_omp_n256_p8.csv --run-id quick_smoke --config-index 13
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [14] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 4 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_014_omp_n256_p4.csv --run-id quick_smoke --config-index 14
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [15] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_015_omp_n256_p1.csv --run-id quick_smoke --config-index 15
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [16] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 32 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_016_omp_n256_p32.csv --run-id quick_smoke --config-index 16
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [17] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 2 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_017_omp_n256_p2.csv --run-id quick_smoke --config-index 17
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [18] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 12 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_018_omp_n256_p12.csv --run-id quick_smoke --config-index 18
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [19] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 256 --threads 6 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_019_omp_n256_p6.csv --run-id quick_smoke --config-index 19
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [20] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 32 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_020_omp_n512_p32.csv --run-id quick_smoke --config-index 20
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [21] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method naive --n 512 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_021_naive_n512_p1.csv --run-id quick_smoke --config-index 21
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [22] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 6 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_022_omp_n512_p6.csv --run-id quick_smoke --config-index 22
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [23] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_023_omp_n512_p1.csv --run-id quick_smoke --config-index 23
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [24] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method seq --n 512 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_024_seq_n512_p1.csv --run-id quick_smoke --config-index 24
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [25] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 16 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_025_omp_n512_p16.csv --run-id quick_smoke --config-index 25
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [26] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 8 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_026_omp_n512_p8.csv --run-id quick_smoke --config-index 26
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [27] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 4 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_027_omp_n512_p4.csv --run-id quick_smoke --config-index 27
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [28] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 2 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_028_omp_n512_p2.csv --run-id quick_smoke --config-index 28
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [29] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 512 --threads 12 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_029_omp_n512_p12.csv --run-id quick_smoke --config-index 29
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [30] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 6 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_030_omp_n1024_p6.csv --run-id quick_smoke --config-index 30
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [31] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_031_omp_n1024_p1.csv --run-id quick_smoke --config-index 31
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [32] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 8 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_032_omp_n1024_p8.csv --run-id quick_smoke --config-index 32
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [33] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 4 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_033_omp_n1024_p4.csv --run-id quick_smoke --config-index 33
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [34] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method naive --n 1024 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_034_naive_n1024_p1.csv --run-id quick_smoke --config-index 34
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [35] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method seq --n 1024 --threads 1 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_035_seq_n1024_p1.csv --run-id quick_smoke --config-index 35
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [36] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 2 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_036_omp_n1024_p2.csv --run-id quick_smoke --config-index 36
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [37] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 12 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_037_omp_n1024_p12.csv --run-id quick_smoke --config-index 37
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [38] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 16 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_038_omp_n1024_p16.csv --run-id quick_smoke --config-index 38
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)
+=== [39] C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\build\bench.exe --method omp --n 1024 --threads 32 --reps 3 --warmup 1 --seed 20250301 --pin cores --input-dir C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\data --time-budget 300.0 --mem-budget 2147483648 --out C:\Users\Javier\Desktop\CLASE\TERCERO DATOS\BD\INDIVIDUAL ASSIGMENTS\Parallel-Matrix-Multiplication-and-Optional-Vectorisation\results\raw\bench_quick_smoke_parts\cfg_039_omp_n1024_p32.csv --run-id quick_smoke --config-index 39
+
+libgomp: Affinity not supported on this configuration
+warning: --reps 3 < 5 (only acceptable for smoke tests)

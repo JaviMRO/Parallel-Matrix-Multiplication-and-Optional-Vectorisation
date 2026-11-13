@@ -48,6 +48,7 @@ $Units = [ordered]@{
     "matmul_omp.c"   = $true
     "inputs.c"       = $false
     "timing.c"       = $false
+    "affinity.c"     = $false
 }
 
 # Programs (built only if their source exists): main source -> executable.
